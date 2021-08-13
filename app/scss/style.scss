@@ -95,7 +95,97 @@
     top: 55px;
   }  
 }
-
+.footer-top {
+  padding: 75px 0 75px;
+  border-bottom: 1px solid #dae4e9;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  &__contact {
+    width: 230px;
+    margin-right: 100px;
+  }
+  &__navigation {
+    width: 170px;
+    margin-right: 130px;
+  }
+  &__item-form {
+    max-width: 270px;
+  }
+  &__logo{
+    margin-bottom: 25px;
+  }
+  &__address,
+  &__phone,
+  &__email {
+    @extend %Rubik-400;
+    color: #7b7b7b;
+    line-height: 24px;
+    display: block;
+    margin-bottom: 10px;
+  }
+  &__title {
+    margin-bottom: 25px;
+    color: #1f2044;
+    @extend %DMSans-700;
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase;
+  }
+  &__link {
+    color: #7b7b7b;
+    line-height: 32px;
+  }
+  &__text {
+    line-height: 24px;
+    color: #7b7b7b;
+    @extend %Rubik-400;
+    margin-bottom: 40px;
+  }
+  &__form-input {
+    max-width: 170px;
+    width: 100%;
+    background-color: #fef7f0;
+    border: none;
+    padding: 12px 10px 12px 15px;
+    &::placeholder {
+      color: #234969;
+      @extend %DMSans-400;
+      font-size: 12px;
+    }
+  }
+  &__form-btn {
+    border: none;
+    color: #fff;
+    background-color: #a3bbc8;
+    padding: 12px 20px 12px 15px;
+    cursor: pointer;
+  }
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  &__copy {
+    @extend %Rubik-400;
+    color: #7b7b7b;
+    font-size: 14px;
+    line-height: 32px;
+  }
+  &__nav-link {
+    color: #7b7b7b;
+    @extend %Rubik-400;
+    font-size: 14px;
+    line-height: 32px;
+    padding-right: 15px;
+    margin-left: 30px;
+    border-right: 1px solid #7b7b7b;
+    &:nth-child(4) {
+      border: none;
+      padding-right: 0;
+    }
+  }
+}
 
 
 @import 'media';
